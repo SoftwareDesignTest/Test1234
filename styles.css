@@ -1,0 +1,68 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #262626, #1e1e1e);
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Header Styling */
+header h1 {
+    font-size: 3rem;
+    color: #ff6600; /* Dark orange accent */
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #cccccc;
+}
+
+/* Button Styling */
+.cta-button {
+    font-size: 1rem;
+    padding: 12px 25px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(255, 102, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e65c00;
+    transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
